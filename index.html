@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +11,18 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827;
-            /* Dark Blue-Gray */
+            background-color: #111827; 
             color: #E5E7EB;
-            /* Light Gray */
         }
-
         .gradient-text {
             background: linear-gradient(to right, #38bdf8, #818cf8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .section-card {
             background-color: #1F2937;
-            /* Darker card background */
             border: 1px solid #374151;
-            /* Subtle border */
         }
-
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -42,25 +34,24 @@
             background-color: #4f46e5;
             border: 2px solid #111827;
         }
-
         .skill-icon {
             transition: all 0.3s ease;
-            color: #9CA3AF;
-            /* Default icon color */
+            color: #9CA3AF; 
         }
-
         .skill-icon-container:hover .skill-icon {
-            color: #38bdf8;
-            /* Icon color on hover */
+            color: #38bdf8; 
             transform: scale(1.1);
         }
-
         .skill-tooltip {
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
+        .course-badge {
+            background-color: #374151;
+            color: #D1D5DB;
+            border: 1px solid #4B5563;
+        }
     </style>
 </head>
-
 <body class="antialiased">
 
     <!-- Header & Navigation -->
@@ -70,11 +61,10 @@
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#about" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">About</a>
                 <a href="#skills" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">Skills</a>
-                <a href="#experience"
-                    class="text-gray-300 hover:text-sky-400 transition-colors duration-300">Experience</a>
+                <a href="#coursework" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">Coursework</a>
+                <a href="#experience" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">Experience</a>
                 <a href="#projects" class="text-gray-300 hover:text-sky-400 transition-colors duration-300">Projects</a>
-                <a href="#contact"
-                    class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">Contact</a>
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">Contact</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none">
                 <i data-feather="menu"></i>
@@ -84,10 +74,10 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#about" class="block py-2 text-gray-300 hover:text-sky-400">About</a>
             <a href="#skills" class="block py-2 text-gray-300 hover:text-sky-400">Skills</a>
+            <a href="#coursework" class="block py-2 text-gray-300 hover:text-sky-400">Coursework</a>
             <a href="#experience" class="block py-2 text-gray-300 hover:text-sky-400">Experience</a>
             <a href="#projects" class="block py-2 text-gray-300 hover:text-sky-400">Projects</a>
-            <a href="#contact"
-                class="block mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg text-center">Contact</a>
+            <a href="#contact" class="block mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg text-center">Contact</a>
         </div>
     </header>
 
@@ -99,25 +89,16 @@
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
                     Hi, I'm <span class="gradient-text">Mbhoni Shipalana</span>
                 </h1>
-                <p class="text-xl md:text-2xl text-gray-400 mb-8">A passionate Computer Science & Statistics student
-                    building the future, one line of code at a time.</p>
+                <p class="text-xl md:text-2xl text-gray-400 mb-8">A passionate Computer Science & Statistics student building the future, one line of code at a time.</p>
                 <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="https://github.com/DevMbhoni" target="_blank"
-                        class="text-gray-400 hover:text-white transition-colors"><i data-feather="github"
-                            class="w-8 h-8"></i></a>
-                    <a href="https://www.linkedin.com/in/mbhoni-shipalana/" target="_blank"
-                        class="text-gray-400 hover:text-white transition-colors"><i data-feather="linkedin"
-                            class="w-8 h-8"></i></a>
-                    <a href="mailto:shipalanambhoniii@gmail.com"
-                        class="text-gray-400 hover:text-white transition-colors"><i data-feather="mail"
-                            class="w-8 h-8"></i></a>
+                    <a href="https://github.com/DevMbhoni" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i data-feather="github" class="w-8 h-8"></i></a>
+                    <a href="https://www.linkedin.com/in/mbhoni-shipalana/" target="_blank" class="text-gray-400 hover:text-white transition-colors"><i data-feather="linkedin" class="w-8 h-8"></i></a>
+                    <a href="mailto:shipalanambhoniii@gmail.com" class="text-gray-400 hover:text-white transition-colors"><i data-feather="mail" class="w-8 h-8"></i></a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <div
-                    class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gray-800 border-4 border-indigo-500 shadow-2xl">
-                    <img src="https://placehold.co/400x400/1F2937/E5E7EB?text=MS" alt="Mbhoni Shipalana"
-                        class="w-full h-full object-cover">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gray-800 border-4 border-indigo-500 shadow-2xl">
+                     <img src="https://placehold.co/400x400/1F2937/E5E7EB?text=MS" alt="Mbhoni Shipalana" class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
@@ -127,12 +108,7 @@
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text">About Me</h2>
             <div class="section-card rounded-xl p-8 md:p-12 max-w-4xl mx-auto shadow-lg">
                 <p class="text-lg text-gray-300 leading-relaxed">
-                    I am a career-minded Computer Science and Statistics student at Nelson Mandela University with a
-                    strong academic performance and hands-on experience in C# and Java development. I'm passionate about
-                    building clean, maintainable, and efficient software, with a solid foundation in Object-Oriented
-                    Programming, Data Structures & Algorithms, and GUI design. I am actively seeking opportunities to
-                    apply my knowledge in a real-world development environment, contribute to meaningful projects, and
-                    grow within a collaborative team.
+                    I am a career-minded Computer Science and Statistics student at Nelson Mandela University with a strong academic performance and hands-on experience in C# and Java development. I'm passionate about building clean, maintainable, and efficient software, with a solid foundation in Object-Oriented Programming, Data Structures & Algorithms, and GUI design. I am actively seeking opportunities to apply my knowledge in a real-world development environment, contribute to meaningful projects, and grow within a collaborative team.
                 </p>
             </div>
         </section>
@@ -143,62 +119,35 @@
             <div class="max-w-5xl mx-auto">
                 <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-y-12 gap-x-8">
                     <!-- Skill Icons -->
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-csharp-plain text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">C#</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-java-plain-wordmark text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Java</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-r-original text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">R</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-matlab-plain text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">MATLAB</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-azuresql-plain text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">SQL</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-javafx-plain text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">JavaFX</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-vscode-plain text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">VS
-                            Code</span></div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            class="devicon-intellij-plain text-6xl skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">IntelliJ
-                            IDEA</span></div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            data-feather="box" class="w-14 h-14 skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">OOP</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            data-feather="git-merge" class="w-14 h-14 skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Data
-                            Structures</span></div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            data-feather="code" class="w-14 h-14 skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Algorithms</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            data-feather="layout" class="w-14 h-14 skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">GUI
-                            Design</span></div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            data-feather="users" class="w-14 h-14 skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Collaboration</span>
-                    </div>
-                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i
-                            data-feather="tool" class="w-14 h-14 skill-icon"></i><span
-                            class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Debugging</span>
-                    </div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-csharp-plain text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">C#</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-java-plain-wordmark text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Java</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-r-original text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">R</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-matlab-plain text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">MATLAB</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-mysql-plain-wordmark text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">SQL</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-javafx-original-wordmark text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">JavaFX</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-vscode-plain text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">VS Code</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i class="devicon-intellij-plain text-6xl skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">IntelliJ IDEA</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i data-feather="box" class="w-14 h-14 skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">OOP</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i data-feather="git-merge" class="w-14 h-14 skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Data Structures</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i data-feather="code" class="w-14 h-14 skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Algorithms</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i data-feather="layout" class="w-14 h-14 skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">GUI Design</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i data-feather="users" class="w-14 h-14 skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Collaboration</span></div>
+                    <div class="skill-icon-container group relative flex flex-col items-center justify-center"><i data-feather="tool" class="w-14 h-14 skill-icon"></i><span class="skill-tooltip absolute -bottom-10 w-max px-3 py-1.5 bg-gray-800 border border-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2">Debugging</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coursework Section -->
+        <section id="coursework" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Key Coursework</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="course-badge text-sm font-medium px-4 py-2 rounded-full">Data Structures & Algorithms</span>
+                    <span class="course-badge text-sm font-medium px-4 py-2 rounded-full">Database Systems</span>
+                    <span class="course-badge text-sm font-medium px-4 py-2 rounded-full">Computer Architecture & Networks</span>
+                    <span class="course-badge text-sm font-medium px-4 py-2 rounded-full">Regression Analysis</span>
+                    <span class="course-badge text-sm font-medium px-4 py-2 rounded-full">Theory of Distributions</span>
+                    <span class="course-badge text-sm font-medium px-4 py-2 rounded-full">Multivariable & Vector Calculus</span>
                 </div>
             </div>
         </section>
@@ -217,8 +166,7 @@
                             <li>Assisted in marking practical assignments and recording academic results.</li>
                             <li>Supported students with C# and Java coding projects and debugging challenges.</li>
                             <li>Enhanced class engagement by providing one-on-one coding support.</li>
-                            <li>Provided constructive feedback to improve course materials and teaching effectiveness.
-                            </li>
+                            <li>Provided constructive feedback to improve course materials and teaching effectiveness.</li>
                         </ul>
                     </div>
                 </div>
@@ -231,28 +179,20 @@
             <div class="max-w-4xl mx-auto">
                 <div class="section-card rounded-xl overflow-hidden md:flex shadow-lg">
                     <div class="md:w-1/2">
-                        <img src="https://placehold.co/600x400/111827/38bdf8?text=NextStepUni" alt="Project Screenshot"
-                            class="h-full w-full object-cover">
+                        <img src="https://placehold.co/600x400/111827/38bdf8?text=NextStepUni" alt="Project Screenshot" class="h-full w-full object-cover">
                     </div>
                     <div class="md:w-1/2 p-8 flex flex-col justify-center">
                         <h3 class="text-2xl font-bold text-white mb-3">NextStepUni Desktop Application</h3>
                         <p class="text-gray-400 mb-4">
-                            A desktop application designed and developed using Java and JavaFX to help students explore
-                            universities and scholarships across South Africa.
+                            A desktop application designed and developed using Java and JavaFX to help students explore universities and scholarships across South Africa.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span
-                                class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">Java</span>
-                            <span
-                                class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">JavaFX</span>
-                            <span
-                                class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">Scene
-                                Builder</span>
-                            <span
-                                class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">OOP</span>
+                            <span class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">Java</span>
+                            <span class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">JavaFX</span>
+                            <span class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">Scene Builder</span>
+                            <span class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">OOP</span>
                         </div>
-                        <a href="https://github.com/DevMbhoni" target="_blank"
-                            class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold">
+                        <a href="https://github.com/DevMbhoni" target="_blank" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 font-semibold">
                             View on GitHub <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
                         </a>
                     </div>
@@ -263,12 +203,15 @@
         <!-- Contact Section -->
         <section id="contact" class="py-20 text-center">
             <h2 class="text-3xl font-bold mb-4 gradient-text">Get In Touch</h2>
-            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">I'm currently looking for new opportunities. If you have a
-                project in mind or just want to connect, feel free to send me a message.</p>
-            <a href="mailto:shipalanambhoniii@gmail.com"
-                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300 inline-block">
-                Say Hello!
-            </a>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">I'm currently looking for new opportunities. If you have a project in mind, want to connect, or would like to see my full resume, please reach out!</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                 <a href="mailto:shipalanambhoniii@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300 inline-block w-full sm:w-auto">
+                    Say Hello!
+                </a>
+                <a href="https://drive.google.com/file/d/1W3kUD0VNi2AcuLPA6Fk7M-qphX9dKuj8/view?usp=sharing" target="_blank" class="bg-transparent border-2 border-indigo-500 text-indigo-400 hover:bg-indigo-500 hover:text-white font-bold py-4 px-8 rounded-lg transition-colors duration-300 inline-flex items-center justify-center w-full sm:w-auto">
+                    <i data-feather="download" class="mr-2"></i> Download Resume
+                </a>
+            </div>
         </section>
 
     </main>
@@ -277,12 +220,9 @@
     <footer class="bg-gray-900/50 border-t border-gray-800">
         <div class="container mx-auto px-6 py-6 text-center text-gray-500">
             <div class="flex justify-center space-x-4 mb-4">
-                <a href="https://github.com/DevMbhoni" target="_blank" class="hover:text-white transition-colors"><i
-                        data-feather="github"></i></a>
-                <a href="https://www.linkedin.com/in/mbhoni-shipalana/" target="_blank"
-                    class="hover:text-white transition-colors"><i data-feather="linkedin"></i></a>
-                <a href="mailto:shipalanambhoniii@gmail.com" class="hover:text-white transition-colors"><i
-                        data-feather="mail"></i></a>
+                <a href="https://github.com/DevMbhoni" target="_blank" class="hover:text-white transition-colors"><i data-feather="github"></i></a>
+                <a href="https://www.linkedin.com/in/mbhoni-shipalana/" target="_blank" class="hover:text-white transition-colors"><i data-feather="linkedin"></i></a>
+                <a href="mailto:shipalanambhoniii@gmail.com" class="hover:text-white transition-colors"><i data-feather="mail"></i></a>
             </div>
             <p>&copy; 2024 Mbhoni Shipalana. All Rights Reserved.</p>
         </div>
@@ -291,25 +231,24 @@
     <script>
         feather.replace();
 
-        // Mobile menu toggle
+
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                if (targetElement) {
+                if(targetElement) {
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     });
                 }
-                // Close mobile menu on link click
+
                 if (!mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
                 }
@@ -317,5 +256,4 @@
         });
     </script>
 </body>
-
 </html>
